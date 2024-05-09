@@ -10,7 +10,6 @@ driver.get("https://orteil.dashnet.org/experiments/cookie/")
 cookie = driver.find_element(by="id", value="cookie")
 
 timeout = time.time() + 5
-five_min = time.time() + 60*5  # 5 minutes
 
 game_is_on = True
 while game_is_on:
