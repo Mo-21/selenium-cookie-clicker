@@ -3,7 +3,7 @@ from selenium import webdriver
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_experimental_option(name="detach", value=True)
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(chrome_options)
 driver.get("https://secure-retreat-92358.herokuapp.com/")
 
 first_name = driver.find_element(by="name", value="fName")
